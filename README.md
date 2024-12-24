@@ -24,9 +24,7 @@ The **Legal News Chatbot** is an AI-powered application that allows users to acc
 
 **Step 1: Clone the repository**<br>
 
-git clone https://github.com/your-username/legal-news-chatbot.git<br>
-
-cd legal-news-chatbot
+git clone https://github.com/SK-21-D3v/JustiFi.git<br>
 
 **Step 2: Install dependencies** <br>
    
