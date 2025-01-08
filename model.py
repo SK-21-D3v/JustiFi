@@ -12,7 +12,8 @@ def query_gemma2_model(prompt):
     }
 
     try:
-        response = requests.post('http://127.0.0.1:11434/api/generate', json=template)
+        response = requests.post('http://localhost:11434/api/generate', json=template)
+       # 'http://127.0.0.1:11434/api/generate'
         if response.status_code == 200:
             llm_response = json.loads(response.text)
             return llm_response.get('response', "No response received.")
