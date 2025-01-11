@@ -4,7 +4,7 @@ Justifi is an AI-powered legal chatbot designed to assist users with queries bas
 
 **Basic Flow of the Application:**
 
-![Streamlit Dashboard](https://github.com/SK-21-D3v/Autism-Care/blob/main/Screenshot%20(1374).png?raw=true)<br>
+![Streamlit Dashboard](https://github.com/SK-21-D3v/JustiFi/blob/main/Screenshot%20(1361).png?raw=true)<br>
 
 ![Response ](https://github.com/SK-21-D3v/Autism-Care/blob/main/Screenshot%20(1375).png?raw=true) <br>
 
