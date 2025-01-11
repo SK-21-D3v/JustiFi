@@ -1,75 +1,48 @@
-<h1>JustiFi - Legal News Chatbot</h1>
+# JustiFi - A Legal Chatbot powered by AI
 
-## Overview
-The **Legal News Chatbot** is an AI-powered application that allows users to access the latest legal news, court decisions, legal trends, and more. The chatbot retrieves data from the **NewsAPI** and stores it in a **PostgreSQL** database. It uses **Natural Language Processing (NLP)** to provide users with relevant information based on their queries. The chatbot is hosted on **Streamlit**, allowing users to interact with it via a simple web interface.
+Justifi is an AI-powered legal chatbot designed to assist users with queries based on legal documents. It leverages Natural Language Processing (NLP) techniques to provide accurate and relevant answers to legal questions. Built using Python, this chatbot integrates with Streamlit for an intuitive user interface and can handle queries using a database of legal documents.
+
+**Basic Flow of the Application:**
+
+![Streamlit Dashboard](https://github.com/SK-21-D3v/Autism-Care/blob/main/Screenshot%20(1374).png?raw=true)<br>
+
+![Response ](https://github.com/SK-21-D3v/Autism-Care/blob/main/Screenshot%20(1375).png?raw=true) <br>
 
 
 ## Features
-- Fetches the latest legal news articles using the **NewsAPI**.
-- Stores news data in a **PostgreSQL database**.
-- Allows users to ask questions about specific cases, legal trends, or recent news.
-- Chatbot responses are powered by **Natural Language Processing (NLP)**.
-- Hosted on **Streamlit** for easy access and interaction.
 
-## Installations
+- **Legal Document Parsing:** Supports Word and PDF files, extracting relevant information from the Indian Penal Code 1860, the Maharashtra Cooperative Societies Housing Act 1960, and the Income Tax Act 1961.<br>
 
-### Prerequisites
+- **NLP-Powered Query Handling:** Uses advanced NLP techniques to understand and respond to user queries effectively.<br>
 
-- **Python 3.8+**
-- **PostgreSQL Database** (locally set up or remote)
-- **Streamlit**
-- **NewsAPI Key** (sign up at [NewsAPI](https://newsapi.org/))
+- **Streamlit Interface:** Provides a user-friendly and interactive interface for seamless chatbot interactions.<br>
 
-### Steps to Set Up
+## Technologies Used:
 
-**Step 1: Clone the repository**<br>
+- **Programming Language:** Python<br>
 
-git clone https://github.com/SK-21-D3v/JustiFi.git<br>
+- **Frameworks:** Streamlit, Flask<br>
 
-**Step 2: Install dependencies** <br>
-   
-pip install -r requirements.txt<br>
+- **Database:** PostgreSQL<br>
 
-**Step 3: Set up PostgreSQL database**<br>
-
- *1.* Create a database in PostgreSQL (either locally or on a remote server).<br>
- 
- *2.* Set up the necessary tables to store news data (you can refer to the SQL schema in the repository).<br>
- 
- *3.* Update the connection details in the config.py file:<br>
- - Host: "localhost" or the remote host IP<br>
- - Database name: "your_database_name"<br>
- - Username: "your_postgres_username"<br>
- - Password: "your_postgres_password"<br>
-
- **Step 4: Add your NewsAPI key**<br>
- 
- *1.* Sign up at https://newsapi.org/ and get your API key.<br>
- 
- *2.* Insert your API key in the config.py file in the relevant field.<br>
- 
-**Step 5: Run the application**<br>
-streamlit run app.py <br>
-
+- **NLP Libraries:** spaCy, NLTK<br>
 
 ## Usage
-Once the app is up and running, you can interact with the chatbot via the Streamlit interface. Here are some example questions you can ask:
-- General Legal News: "What are the latest legal news updates?"
-- Case-Specific Inquiries: "Can you find news about [specific case name]?"
+
+Once the app is up and running, you can interact with the chatbot via the Streamlit interface. Here are some example questions you can ask:<br>
+
+- General Legal Questions: "What are the updates in the legal markets?"
+- Case-Specific Inquiries: "Can you describe about [specific case name]?"
 - Legal Topics: "What are the latest updates on intellectual property law?"
 - Lawyer or Firm Information: "What are the latest news about [lawyer name]?"
 - Court Decisions or Laws: "What recent court decisions have impacted [specific area of law]?"
-- Region-Specific Legal News: "What’s the latest legal news in [location]?"
 - Legal Trends or Events: "What are the legal trends this year?"
 
-## Contributing
-- Fork the repository.
-- Create a new branch for your changes.
-- Commit your changes.
-- Push your changes to your forked repository.
-- Create a pull request to the main repository.
+## Future Enhancements
+- Add support for more legal documents and jurisdictions.<br>
 
-## Acknowledgments
-- **NewsAPI** for providing access to real-time news articles.
-- **Streamlit** for creating a seamless interface for the chatbot.
-- **PostgreSQL** for providing a robust database solution.
+- Implement multilingual query support.<br>
+
+- Enhance NLP models with fine-tuned transformers for better query understanding.<br>
+
+- Include case law references in responses.<br>
